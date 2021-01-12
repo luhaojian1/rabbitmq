@@ -1,0 +1,14 @@
+server:
+  port: 8021
+spring:
+  #app name
+  application:
+    name: rabbitmq-provider
+  #config rabbitMq server
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: admin
+    #victual host
+    virtual-host: my_vhost
