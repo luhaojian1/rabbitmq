@@ -8,12 +8,10 @@
 		<version>1.0-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-
-	<artifactId>rabbitmq_provider</artifactId>
+	<artifactId>rabbitmq_consumer</artifactId>
 	<version>0.0.1</version>
-	<name>rabbitmq_provider</name>
-	<description>rabbitmq provider</description>
-
+	<name>rabbitmq_consumer</name>
+	<description>Demo project for Spring Boot</description>
 
 
 </project>

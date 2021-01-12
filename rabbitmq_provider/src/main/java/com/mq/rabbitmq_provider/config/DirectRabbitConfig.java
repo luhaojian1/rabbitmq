@@ -32,8 +32,8 @@ public class DirectRabbitConfig {
         return BindingBuilder.bind(createDirectQueue()).to(testDirectExchange()).with("DirectRouting");
     }
 
-    @Bean
-    public DirectExchange lonelyDirectExchange() {
-        return new DirectExchange("lonelyDirectExchange");
-    }
+//    @Bean
+//    public DirectExchange lonelyDirectExchange() {
+//        return new DirectExchange("lonelyDirectExchange");
+//    }
 }

@@ -1,7 +1,6 @@
-package com.mq.rabbitmq_provider.controller;
+package com.mq.rabbitmq_consumer.controller;
 
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,8 +17,7 @@ public class RabbitMqProviderController {
     @GetMapping("/direct")
     public void sentDirectMsg(){
         try {
-            rabbitTemplate.convertAndSend("DirectExchange","DirectRouting", "Hello World!");
-            System.out.println("send message!");
+            rabbitTemplate.convertAndSend("DirectRouting", "Hello World!");
         }catch (Exception e){
             e.printStackTrace();
         }
